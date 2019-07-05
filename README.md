@@ -24,7 +24,7 @@ $mysqli = new mysqli('localhost', 'root', '123456', 'test');
 $schema = json_decode(file_get_contents('schema.json'));
 
 // Send query to database
-$result = FetcherGRIDMI::onSelect($mysqli, $schema, array('name' => 'GRIDMI'));
+$result = FetcherGRIDMI::onSelect($mysqli, $schema, array('customerId' => 0));
 
 ``````
 
